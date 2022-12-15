@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#hero {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./Assets/HeroBackground.png);
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+#hero nav {
+  max-width: 1200px;
+  height: 156px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+}
+
+#hero nav ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero nav ul:last-of-type li a img {
+  height: 32px;
+  width: 32px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 84px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+  width: 80%;
+  font-size: 74px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.hero-content p {
+  width: 80%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-content a {
+  color: currentColor;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 62px;
+  background-color: #2091f9;
+  border-radius: 35px;
+}
+
+.feature-section {
+  margin-bottom: 150px;
+}
+
+.feature-section > h1 {
+  color: #252b42;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.feature-section > h2 {
+  width: 30%;
+  margin: 0 auto;
+  color: #374754;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
+
+.features-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+.features {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.feature-detail h3 {
+  color: #252b42;
+  padding: 0 40px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature-detail p {
+  padding: 0 40px;
+  color: #374754;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.video-container {
+  position: relative;
+  /* padding: 50px 0; */
+  background-color: red;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 658px;
+  border-radius: 44.81px;
+  overflow: hidden;
+  filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+}
+
+.video-container video {
+  width: 100%;
+  height: fit-content;
+}
+
+.video-button {
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: calc(50% - 187.4px / 2 + 0.32px);
+  top: calc(50% - 187.4px / 2 - 0.15px);
+  border-radius: 50%;
+  background: #2091f9;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 69px 50px;
+}
+
+.contact-us-block h2 {
+  color: #252b42;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55px;
+  margin-bottom: 25px;
+}
+
+.subscribe-block {
+  margin-bottom: 36px;
+}
+
+.subscribe-block h3 {
+  color: #252b42;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.subscribe-block p {
+  color: #374754;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 25px;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+}
+
+form input {
+  padding: 19px 40px;
+  background: #f4f4f4;
+  border: 1px solid #e8e8e8;
+  border-radius: 39px;
+}
+
+form button {
+  border: none;
+  color: white;
+  padding: 19px 38px;
+  background: #2091f9;
+  border-radius: 35px;
+}
