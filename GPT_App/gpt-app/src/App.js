@@ -1,4 +1,5 @@
 import './App.css';
+import 'rc-pagination/assets/index.css';
 import { Main, UseCases } from './Pages';
 import { Routes, Route } from 'react-router-dom';
 function App() {
