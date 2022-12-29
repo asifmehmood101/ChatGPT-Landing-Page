@@ -131,7 +131,7 @@ h1::after {
   text-align: center;
   text-decoration: none;
   padding: 16px 62px;
-  background-color: #16e998;
+  background-color: #209266;
   border-radius: 35px;
 }
 
@@ -139,7 +139,7 @@ h1::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .feature-section > h1 {
@@ -166,14 +166,13 @@ h1::after {
   justify-content: center;
   gap: 50px;
   margin-top: 90px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .features {
   flex: 0 0 20%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
 }
 
 .feature-detail h3 {
@@ -206,6 +205,13 @@ h1::after {
   filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
 }
 
+.useCase-video-container {
+  position: relative;
+  height: 658px;
+  overflow: hidden;
+  filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+}
+
 .video-container video {
   width: 100%;
   height: fit-content;
@@ -228,6 +234,7 @@ h1::after {
 }
 
 .design-container {
+  margin-top: 20px;
   background-color: #252b42;
   color: white;
   display: flex;
@@ -236,9 +243,6 @@ h1::after {
   max-width: 1440px;
   margin: 0 auto;
   padding: 69px 50px;
-}
-
-.design-container {
   justify-content: space-between;
 }
 
@@ -500,6 +504,16 @@ address a {
   margin-bottom: 1.125rem;
   font-weight: 300;
 }
+
+.elipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+}
+
 .hoverbox a {
   position: relative;
   color: #fff;
@@ -570,4 +584,33 @@ address a {
 .hoverbox:hover a:hover img {
   transform: scale(1.2) rotate(-5deg);
   filter: blur(8px) saturate(0);
+}
+
+/* modal component styling */
+
+.ReactModal__Body--open,
+.ReactModal__Html--open {
+  overflow: hidden;
+}
+
+.modalCloseBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.ModalContentwrapper {
+  padding: 30px;
+}
+
+.modalItemTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modalItemSubtitle {
+  line-height: 1.5;
 }

@@ -4,6 +4,7 @@ import { Feature } from '../components/Feature';
 import { Footer } from '../components/Footer';
 import { DataArray as StaticDataArray } from '../Utility/DummyData';
 import Pagination from 'rc-pagination';
+import { UseCase } from '../components/UseCase';
 
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
@@ -60,19 +61,19 @@ export const UseCases = () => {
       />
       <div className='showCase-container'>
         {sliceDataPerPage(currentPage, size).map(
-          ({ id, title, subtitle, Link, image }) => {
+          ({ id, title, subtitle, Link, image, videoSrc }) => {
             return (
-              <div className='hoverbox' key={id}>
-                <img className='hoverbox__image' src={image} alt='Test Img' />
-                <h3>{title}</h3>
-                <p>{subtitle}</p>
-                <a href={Link}>More infos</a>
-              </div>
+              <UseCase
+                id={id}
+                title={title}
+                subtitle={subtitle}
+                Link={Link}
+                image={image}
+                videoSrc={videoSrc}
+              />
             );
           },
         )}
-      </div>
-      <div>
         <Pagination
           onChange={paginationChanged}
           current={currentPage}
@@ -82,7 +83,7 @@ export const UseCases = () => {
           onShowSizeChange={PerPageChange}
         />
       </div>
-      <br />
+
       <Footer />
     </div>
   );

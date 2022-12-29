@@ -3,7 +3,7 @@ import { Video } from './Video';
 import OpenType from '../Assets/OpenType.svg';
 import RealData from '../Assets/realData.svg';
 import Ways from '../Assets/ways.svg';
-
+import IntroVideo from '../Assets/IntroVideo.mp4';
 export const Feature = ({ heading, subtitle, showFeatures }) => {
   return (
     <section className='feature-section'>
@@ -55,7 +55,7 @@ export const Feature = ({ heading, subtitle, showFeatures }) => {
           </div>
         </div>
       ) : null}
-      <Video />
+      <Video videoSrc={IntroVideo} showControls={false} />
     </section>
   );
 };
