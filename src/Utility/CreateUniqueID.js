@@ -1,2 +1,1 @@
-export const GenerateUniqueID = () =>
-  Math.floor(Math.random() * Date.now().toString());
+export const GenerateUniqueID = () => crypto.randomUUID;
