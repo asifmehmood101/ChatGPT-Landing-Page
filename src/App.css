@@ -18,7 +18,7 @@ body {
 
 #hero,
 #hero-useCases {
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(./Assets/HeroBackground.png);
@@ -156,7 +156,6 @@ h1::after {
   color: #374754;
   font-size: 24px;
   font-weight: 400;
-  line-height: 40px;
   text-align: center;
 }
 
@@ -287,7 +286,7 @@ form button {
   border: none;
   color: white;
   padding: 19px 38px;
-  background: #16e998;
+  background: #209266;
   border-radius: 35px;
 }
 
@@ -318,7 +317,7 @@ form button {
   text-align: center;
   text-decoration: none;
   padding: 16px 62px;
-  background-color: #16e998;
+  background-color: #209266;
   border-radius: 35px;
 }
 
@@ -613,4 +612,39 @@ address a {
 
 .modalItemSubtitle {
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 1300px) {
+  #hero,
+  #hero-useCases {
+    height: 80vh;
+  }
+
+  #hero nav,
+  #hero-useCases nav {
+    padding: 0 40px;
+  }
+
+  .hero-content h2,
+  .hero-content-1 h2 {
+    font-size: 48px;
+  }
+
+  .hero-content p,
+  .hero-content-1 p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .feature-section > h2 {
+    width: 50%;
+  }
+
+  .feature-detail h3 {
+    padding: 0 40px;
+  }
+
+  .feature-section > h1 {
+    margin-bottom: 12px;
+  }
 }
