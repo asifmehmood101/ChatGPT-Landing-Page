@@ -41,6 +41,7 @@ export const ContactForm = () => {
       console.log({ EmailResult, EmailStatus });
     } catch (error) {
       emailNotify('Something went wrong');
+      setIsLoading((prev) => !prev);
     }
     setFormValue(formInitValue);
   };
