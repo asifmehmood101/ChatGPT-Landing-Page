@@ -81,7 +81,7 @@ export const ContactForm = () => {
       <button type='submit'>{isLoading ? 'Loading...' : 'Send'}</button>
       <ToastContainer
         position='top-right'
-        autoClose={5000}
+        autoClose={50000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
