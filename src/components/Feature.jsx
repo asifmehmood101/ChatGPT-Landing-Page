@@ -55,6 +55,7 @@ export const Feature = ({ heading, subtitle, showFeatures }) => {
           </div>
         </div>
       ) : null}
+      <div style={{ marginBottom: '30px' }} />
       <Video videoSrc={IntroVideo} showControls={false} />
     </section>
   );

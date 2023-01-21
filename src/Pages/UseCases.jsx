@@ -53,27 +53,30 @@ export const UseCases = () => {
 
   return (
     <div>
-      <UseCasesHero />
-      <Feature
-        heading='List of use-Cases'
-        subtitle='ChatGPT is a cutting-edge natural language processing (NLP) model
+      <div>
+        <UseCasesHero />
+        <Feature
+          heading='List of use-Cases'
+          subtitle='ChatGPT is a cutting-edge natural language processing (NLP) model
         developed by OpenAI.'
-      />
-      <div className='showCase-container'>
-        {sliceDataPerPage(currentPage, size).map(
-          ({ id, title, subtitle, Link, image, videoSrc }) => {
-            return (
-              <UseCase
-                id={id}
-                title={title}
-                subtitle={subtitle}
-                Link={Link}
-                image={image}
-                videoSrc={videoSrc}
-              />
-            );
-          },
-        )}
+        />
+
+        <div className='showCase-container'>
+          {sliceDataPerPage(currentPage, size).map(
+            ({ id, title, subtitle, Link, image, videoSrc }) => {
+              return (
+                <UseCase
+                  id={id}
+                  title={title}
+                  subtitle={subtitle}
+                  Link={Link}
+                  image={image}
+                  videoSrc={videoSrc}
+                />
+              );
+            },
+          )}
+        </div>
         <Pagination
           onChange={paginationChanged}
           current={currentPage}

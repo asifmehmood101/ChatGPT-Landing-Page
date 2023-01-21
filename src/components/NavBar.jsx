@@ -3,11 +3,13 @@ import Twitter from '../Assets/Tweeter.svg';
 import Facebook from '../Assets/Facebook.svg';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../Assets/Logo.svg';
+import { BurgerMenu } from './BurgerMenu';
 
 export const NavBar = () => {
   return (
     <nav>
-      <ul>
+      <BurgerMenu />
+      <ul className='nav-links'>
         <li>
           <Link to='/'>Home</Link>
         </li>
@@ -30,7 +32,7 @@ export const NavBar = () => {
           <Logo />
         </li>
       </ul>
-      <ul>
+      <ul className='social-links'>
         <li>
           <a href='https://twitter.com' target='_blank' rel='noreferrer'>
             <img src={Twitter} alt='Twitter' />

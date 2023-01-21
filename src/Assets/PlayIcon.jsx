@@ -4,7 +4,7 @@ export const PlayIcon = () => {
   return (
     <svg
       width='40'
-      height='48'
+      height='40'
       style={{ margin: 'auto' }}
       viewBox='0 0 40 48'
       fill='none'

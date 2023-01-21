@@ -17,6 +17,7 @@ export const ContactForm = () => {
   const { name, email, message } = formValue;
 
   const emailNotify = (message) => toast(message);
+  console.log(process.env);
 
   const HandleFormValue = (e) => {
     const { name, value } = e.target;
@@ -28,10 +29,10 @@ export const ContactForm = () => {
     try {
       setIsLoading((prev) => !prev);
       const sendEmail = await emailjs.sendForm(
-        'service_i0s3jmi',
-        'template_GS',
+        `${process.env.REACT_APP_EMAIL_JS_SERVICE_ID}`,
+        `${process.env.REACT_APP_TEMPLATE_ID}`,
         form.current,
-        'xxAflGNiRBzVu9P7A',
+        `${process.env.REACT_APP_PUBLIC_API_KEY}`,
       );
 
       const EmailStatus = await sendEmail.status;
@@ -78,10 +79,12 @@ export const ContactForm = () => {
         required
       />
       <br />
-      <button type='submit'>{isLoading ? 'Loading...' : 'Send'}</button>
+      <button type='submit' className='button'>
+        {isLoading ? 'Loading...' : 'Send'}
+      </button>
       <ToastContainer
         position='top-right'
-        autoClose={50000}
+        autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
